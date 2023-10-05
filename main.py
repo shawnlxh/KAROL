@@ -291,7 +291,7 @@ def train(args,multi_task_model,train_data,data,ssl_block, optimizer, optimizer_
             bpr_u2s_loss += float(loss) 
         print('bpr for u2s finished')
 
-        if args.contrast_type == 'noise':
+        if args.contrast_type == 'noise' or args.contrast_type == 'all':
             print('begin ssl')
             ssl_i_loss = 0
             u2i_u = torch.randperm(train_data['user'].node_id.size()[0])
@@ -436,7 +436,7 @@ def train(args,multi_task_model,train_data,data,ssl_block, optimizer, optimizer_
             print('ssl_temp_s_avg',ssl_temp_s_avg)    
             print('ssl for item seller finished')
 
-        else:
+        if args.contrast_type == 'dropout' or args.contrast_type == 'all':
             #begin ssl  
             print('begin ssl')
             ssl_i_loss = 0
