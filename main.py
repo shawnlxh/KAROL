@@ -15,7 +15,7 @@ def get_args():
                         help="Data path for training.")
     parser.add_argument("--data_name", default='clothes', type=str,
                         help="Data path for training.")
-    parser.add_argument("--contrast_type", type=str, default='dropout', choices=['dropout', 'noise'], 
+    parser.add_argument("--contrast_type", type=str, default='dropout', choices=['dropout', 'noise', 'all'], 
                         help="Contrast type")
     parser.add_argument("--output_dir", default='./checkpoints', type=str,
                         help="The output directory where the model checkpoints and predictions will be written.")
