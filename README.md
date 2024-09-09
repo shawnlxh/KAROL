@@ -1,6 +1,6 @@
 # KAROL
 
-The code repository of our SDM submission: Multi-task Learning in Marketplace Recommendation via Knowledge Graph Convolutional Network with Adaptive Contrastive Learning.
+The code repository of our submission: Multi-task Learning in Marketplace Recommendation via Knowledge Graph Convolutional Network with Adaptive Contrastive Learning.
 
 The input of Raw data is "cust_id", "item_id", "rec_seller_id", which the ids of users, items and sellers.  
 Environment:  
